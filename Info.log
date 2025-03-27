@@ -24,3 +24,31 @@ mars 27, 2025 3:26:26 PM supermarket.dao.product.ProductDAOImpl insertProduct
 INFOS: Produit inséré : Fromage 200g
 mars 27, 2025 3:26:26 PM supermarket.dao.product.ProductDAOImpl insertProduct
 INFOS: Produit inséré : Oeufs (Boîte de 6)
+mars 27, 2025 3:37:27 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Test A
+mars 27, 2025 3:37:27 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Test B
+mars 27, 2025 3:37:27 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Test C
+mars 27, 2025 3:44:28 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Chips Lay's
+mars 27, 2025 3:44:28 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Fanta 1L
+mars 27, 2025 3:44:28 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Coca-Cola 1L
+mars 27, 2025 3:44:28 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Pain Baguette
+mars 27, 2025 3:44:28 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Lait 1L
+mars 27, 2025 3:44:28 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Beurre 250g
+mars 27, 2025 3:44:28 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Sauce Tomate
+mars 27, 2025 3:44:28 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Barre Chocolatée
+mars 27, 2025 3:44:28 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Fromage 200g
+mars 27, 2025 3:44:28 PM supermarket.dao.product.ProductDAOImpl insertProduct
+INFOS: Produit inséré : Oeufs (Boîte de 6)
+mars 27, 2025 3:44:33 PM supermarket.Main main
+INFOS: Choix menu : 1 - Affichage de tous les produits

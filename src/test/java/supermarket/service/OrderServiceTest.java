@@ -14,7 +14,7 @@ class OrderServiceTest {
     void testFilterRecentOrders() {
         ArrayList<Order> orders = new ArrayList<>();
         orders.add(new Order(1, LocalDate.now().minusMonths(6), 1, 2)); // récente
-        orders.add(new Order(2, LocalDate.now().minusYears(2), 2, 3)); // trop vieille
+        orders.add(new Order(2, LocalDate.now().minusYears(2), 2, 3));  // trop vieille
 
         ArrayList<Order> filtered = OrderService.filterRecentOrders(orders);
 

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: supermarket.dao.ProductDAOImplTest
+Test set: supermarket.dao.ProductServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.521 s -- in supermarket.dao.ProductDAOImplTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in supermarket.dao.ProductServiceTest

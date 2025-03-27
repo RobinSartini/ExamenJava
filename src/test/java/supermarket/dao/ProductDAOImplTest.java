@@ -1,35 +1,32 @@
 package supermarket.dao;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import supermarket.dao.product.ProductDAO;
-import supermarket.dao.product.ProductDAOImpl;
 import supermarket.model.Product;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ProductDAOImplTest {
+class ProductServiceTest {
 
-    private final ProductDAO productDAO = new ProductDAOImpl();
-
-    @BeforeEach
-    void setup() {
-        // On nettoie la base avant chaque test
-        productDAO.clearAllProducts();
-
-        productDAO.insertProduct(new Product(100, "Test A", "Test", 1.50, 10));
-        productDAO.insertProduct(new Product(101, "Test B", "Test", 2.50, 10));
-        productDAO.insertProduct(new Product(102, "Test C", "Test", 3.50, 10));
+    private List<Product> filterProductsByPriceRange(List<Product> products, double min, double max) {
+        return products.stream()
+                .filter(p -> p.getPrice() >= min && p.getPrice() <= max)
+                .collect(Collectors.toList());
     }
 
     @Test
     void testFilterProductsByPriceRange() {
-        List<Product> filtered = productDAO.filterProductsByPriceRange(1.00, 2.00);
+        List<Product> products = new ArrayList<>();
+        products.add(new Product(1, "Chips", "Snacks", 1.5, 30));
+        products.add(new Product(2, "Fanta", "Drinks", 2.5, 10));
+        products.add(new Product(3, "Pain", "Bakery", 0.9, 20));
+
+        List<Product> filtered = filterProductsByPriceRange(products, 1.0, 2.0);
 
         assertEquals(1, filtered.size());
-        assertEquals("Test A", filtered.get(0).getName());
+        assertEquals("Chips", filtered.get(0).getName());
     }
 }

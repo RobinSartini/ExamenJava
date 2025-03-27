@@ -1,10 +1,6 @@
 supermarket/service/OrderService.class
-supermarket/dao/OrderDAOImpl.class
 supermarket/util/FileReaderUtil.class
 supermarket/model/Order.class
 supermarket/Main.class
 supermarket/model/Product.class
-supermarket/dao/ProductDAOImpl.class
-supermarket/dao/ProductDAO.class
-supermarket/dao/OrderDAO.class
 supermarket/util/DBConfig.class
