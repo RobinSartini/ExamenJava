@@ -65,14 +65,8 @@ public class Main {
                     logger.info("Choix menu : 1 - Affichage de tous les produits");
                     System.out.println("Liste des produits :");
                     allProducts.forEach(System.out::println);
-                    break;
-                case 7:
-                    System.out.println("À bientôt !");
-                    break;
-                default:
-                    System.out.println("Choix invalide.");
-                    break;
-                    case 2:
+                break;
+                case 2:
                     try {
                         System.out.print("ID produit : ");
                         int id = scanner.nextInt();
@@ -154,12 +148,18 @@ public class Main {
                         } else {
                             System.out.println("Produits entre " + minPrice + "€ et " + maxPrice + "€ :");
                             filteredProducts.forEach(System.out::println);
-                        }
-
+                        } 
                     } catch (Exception e) {
                         System.out.println("Erreur de saisie. Veuillez entrer des valeurs valides.");
                         scanner.nextLine(); // en cas d'erreur
                     }
+                break; 
+                
+                case 7:
+                    System.out.println("À bientôt !");
+                break;  
+                default:
+                    System.out.println("Choix invalide.");
                 break;
             }                
         } while (choice != 2);
